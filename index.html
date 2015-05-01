@@ -382,57 +382,29 @@ it will be single map and reduce task.<span style="color: #204a87; font-weight: 
 
 
 <h5><b>1.5.6 Edit $HBASE_HOME/conf/hadoop-env.sh file -</b></h5>
-<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8f5902; font-style: italic">#Add</span> <span style="color: #000000">these</span> <span style="color: #0000cf; font-weight: bold">4</span> <span style="color: #000000">lines</span> <span style="color: #000000">to</span> <span style="color: #000000">this</span> <span style="color: #204a87">file</span> <span style="color: #ce5c00; font-weight: bold">-</span>
+#Add these 4 lines to this file -
 
 # The java implementation to use.
 export JAVA_HOME=/usr/local/jdk/
 
-<span style="color: #204a87; font-weight: bold">&lt;/code&gt;&lt;/pre&gt;</span>
-
-
-<span style="color: #204a87; font-weight: bold">&lt;h5&gt;&lt;b&gt;</span>1.5.7 Edit masters and slaves file -<span style="color: #204a87; font-weight: bold">&lt;/b&gt;&lt;/h5&gt;</span>
-<span style="color: #204a87; font-weight: bold">&lt;h5&gt;</span>1.5.7.1 masters<span style="color: #204a87; font-weight: bold">&lt;/h5&gt;</span>
-<span style="color: #204a87; font-weight: bold">&lt;code&gt;&lt;pre&gt;</span>
-localhost
-<span style="color: #204a87; font-weight: bold">&lt;/code&gt;&lt;/pre&gt;</span>
-
-<span style="color: #204a87; font-weight: bold">&lt;h5&gt;</span>1.5.7.2 slaves<span style="color: #204a87; font-weight: bold">&lt;/h5&gt;</span>
-<span style="color: #204a87; font-weight: bold">&lt;code&gt;&lt;pre&gt;</span>
-localhost
-<span style="color: #204a87; font-weight: bold">&lt;/code&gt;&lt;/pre&gt;</span>
-
-
-
-<span style="color: #204a87; font-weight: bold">&lt;h3&gt;</span>Step 2.<span style="color: #204a87; font-weight: bold">&lt;/h3&gt;</span>
-<span style="color: #204a87; font-weight: bold">&lt;h4&gt;</span>2.1 We need to format hadoop, run following commands<span style="color: #204a87; font-weight: bold">&lt;/h4&gt;</span>
-</pre></td></tr></table></div>
-
-
-user@ubuntu:~$ hadoop namenode -format
 </code></pre>
 
+
+<h5><b>1.5.7 Edit masters and slaves file -</b></h5>
+<h5>1.5.7.1 masters</h5>
+<code><pre>
+localhost
+</code></pre>
+
+<h5>1.5.7.2 slaves</h5>
+<code><pre>
+localhost
+</code></pre>
+
+
+
+<h3><b>Step 2.</b></h3>
+<h4>2.1 We need to format hadoop, run following commands</h4>
 
 <h4>2.2 Starting your cluster -</h4>
 <code><pre>
