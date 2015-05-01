@@ -105,84 +105,154 @@ user@master:~$ sudo chmod -R 755 /usr/big_data_tools/hadoop_data_dir/datanode/
 </code></pre>
 
 <h5>1.5.2 core-site.xml</h5>
-<code><pre>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!--
-   Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
--->
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8f5902; font-style: italic">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span style="color: #8f5902; font-style: italic">&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;configuration.xsl&quot;?&gt;</span>
+<span style="color: #8f5902; font-style: italic">&lt;!--</span>
+<span style="color: #8f5902; font-style: italic">   Unless required by applicable law or agreed to in writing, software</span>
+<span style="color: #8f5902; font-style: italic">  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span style="color: #8f5902; font-style: italic">  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span style="color: #8f5902; font-style: italic">--&gt;</span>
 
-<!-- Put site-specific property overrides in this file. -->
-<configuration>
-<property>
-        <name>fs.default.name</name>
-        <value>hdfs://master:9000/</value>
-        <description>Default file system URI.
+<span style="color: #8f5902; font-style: italic">&lt;!-- Put site-specific property overrides in this file. --&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;configuration&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+        <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>fs.default.name<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+        <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>hdfs://master:9000/<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+        <span style="color: #204a87; font-weight: bold">&lt;description&gt;</span>Default file system URI.
         URI:scheme://authority/path
         scheme:method of access
-        authority:host,port etc.</description>
-        </property>
- <property>
-    <name>hadoop.tmp.dir</name>
-    <value>/usr/big_data_tools/hadoop_data_dir/data</value>
-  </property>
-  <property>
-    <name>fs.checkpoint.dir</name>
-    <value>/usr/big_data_tools/hadoop_data_dir/secondary-namenode</value>
-  </property>
- <property>
-    <name>hadoop.proxyuser.ubuntu.hosts</name>
-    <value>*</value>
-  </property>
-  <property>
-    <name>hadoop.proxyuser.ubuntu.groups</name>
-    <value>*</value>
-  </property>
-</configuration>
-</code></pre>
+        authority:host,port etc.<span style="color: #204a87; font-weight: bold">&lt;/description&gt;</span>
+        <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+ <span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>hadoop.tmp.dir<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>/usr/big_data_tools/hadoop_data_dir/data<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>fs.checkpoint.dir<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>/usr/big_data_tools/hadoop_data_dir/secondary-namenode<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+ <span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>hadoop.proxyuser.ubuntu.hosts<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>*<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>hadoop.proxyuser.ubuntu.groups<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>*<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;/configuration&gt;</span>
+</pre></td></tr></table></div>
 
 <h5>1.5.3 hdfs-site.xml</h5>
-<code><pre>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!--
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8f5902; font-style: italic">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span style="color: #8f5902; font-style: italic">&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;configuration.xsl&quot;?&gt;</span>
+<span style="color: #8f5902; font-style: italic">&lt;!--</span>
+<span style="color: #8f5902; font-style: italic">  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span style="color: #8f5902; font-style: italic">  you may not use this file except in compliance with the License.</span>
+<span style="color: #8f5902; font-style: italic">  You may obtain a copy of the License at</span>
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License. See accompanying LICENSE file.
--->
+<span style="color: #8f5902; font-style: italic">    http://www.apache.org/licenses/LICENSE-2.0</span>
 
-<!-- Put site-specific property overrides in this file. -->
+<span style="color: #8f5902; font-style: italic">  Unless required by applicable law or agreed to in writing, software</span>
+<span style="color: #8f5902; font-style: italic">  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span style="color: #8f5902; font-style: italic">  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span style="color: #8f5902; font-style: italic">  See the License for the specific language governing permissions and</span>
+<span style="color: #8f5902; font-style: italic">  limitations under the License. See accompanying LICENSE file.</span>
+<span style="color: #8f5902; font-style: italic">--&gt;</span>
 
-<configuration>
-<property>
- <name>dfs.replication</name>
- <value>1</value>
-</property>
+<span style="color: #8f5902; font-style: italic">&lt;!-- Put site-specific property overrides in this file. --&gt;</span>
 
-<property>
-    <name>dfs.name.dir</name>
-    <value>/usr/big_data_tools/hadoop_data_dir/namenode</value>
-  </property>
-  <property>
-    <name>dfs.data.dir</name>
-    <value>/usr/big_data_tools/hadoop_data_dir/datanode</value>
-  </property>
-  <property>
-    <name>dfs.permissions.supergroup</name>
-    <value>spark</value>
-  </property>
-</configuration>
-</code></pre>
+<span style="color: #204a87; font-weight: bold">&lt;configuration&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+ <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>dfs.replication<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+ <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>1<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+
+<span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>dfs.name.dir<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>/usr/big_data_tools/hadoop_data_dir/namenode<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>dfs.data.dir<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>/usr/big_data_tools/hadoop_data_dir/datanode<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;property&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;name&gt;</span>dfs.permissions.supergroup<span style="color: #204a87; font-weight: bold">&lt;/name&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;value&gt;</span>spark<span style="color: #204a87; font-weight: bold">&lt;/value&gt;</span>
+  <span style="color: #204a87; font-weight: bold">&lt;/property&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;/configuration&gt;</span>
+</pre></td></tr></table></div>
+
 <h5>1.5.4 mapred-site.xml</h5>
 <code><pre>
 <?xml version="1.0"?>
